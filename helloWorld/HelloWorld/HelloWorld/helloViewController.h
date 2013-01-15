@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface helloViewController : UIViewController
+{
 
+    
+    __weak IBOutlet UILabel *lblMessage;
+    
+}
 @end
