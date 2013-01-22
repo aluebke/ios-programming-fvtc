@@ -14,6 +14,8 @@
 
 @implementation helloViewController
 
+@synthesize lblHelloWorld;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -21,6 +23,8 @@
     
     
     [lblMessage setText:@"Goodbye"];
+    
+    [lblHelloWorld setText:@"Testing"];
     
 }
 

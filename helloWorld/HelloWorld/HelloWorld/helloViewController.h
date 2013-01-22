@@ -15,4 +15,5 @@
     __weak IBOutlet UILabel *lblMessage;
     
 }
+@property (weak, nonatomic) IBOutlet UILabel *lblHelloWorld;
 @end
