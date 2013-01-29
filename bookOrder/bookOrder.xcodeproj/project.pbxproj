@@ -292,6 +292,7 @@
 				3FC9D33516AE0E4700F28848 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

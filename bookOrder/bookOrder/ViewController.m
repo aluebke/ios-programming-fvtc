@@ -33,6 +33,14 @@
 - (IBAction)btnSubmit:(id)sender {
     
     NSLog(@"btnSubmit Clicked");
+    
+    
+    //Add in an alert view
+    UIAlertView *uv = [[UIAlertView alloc] initWithTitle:@"Title" message:@"Thank you for your order!"
+                                           delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+    [uv show];
+    
+    
 }
 
 - (IBAction)physicalSwitchChanged:(id)sender {
