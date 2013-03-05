@@ -1,36 +1,29 @@
 //
-//  AppDelegate.m
-//  Assignment5
+//  IceCreamAppDelegate.m
+//  IceCreamShop
 //
-//  Created by Adam Luebke on 3/1/13.
-//  Copyright (c) 2013 Adam Luebke. All rights reserved.
+//  Created by student on 3/4/13.
+//  Copyright (c) 2013 student. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "IceCreamAppDelegate.h"
+#import "MainViewController.h"
 
-#import "ViewController.h"
+@implementation IceCreamAppDelegate
 
-@implementation AppDelegate
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-   
-    
-    //Where the action happens
-    ViewController  *mvc = [[ViewController alloc] init];
-    [[self window]setRootViewController:mvc];
+    MainViewController  *main=[[MainViewController alloc]init];
+    [[self window]setRootViewController:main];
     
     
-    //leave everything below this line alone.
     
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        self.viewController = [[ViewController alloc] initWithNibName:@"ViewController_iPhone" bundle:nil];
-    } else {
-        self.viewController = [[ViewController alloc] initWithNibName:@"ViewController_iPad" bundle:nil];
-    }
-    self.window.rootViewController = self.viewController;
+    
+    self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
 }

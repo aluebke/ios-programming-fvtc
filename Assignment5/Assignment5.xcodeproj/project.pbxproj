@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F1BDE1416E550DD0077925D /* gameItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1BDE1316E550DD0077925D /* gameItem.m */; };
+		3F1BDE6B16E588050077925D /* AddGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1BDE6916E588050077925D /* AddGameViewController.m */; };
+		3F1BDE6C16E588050077925D /* AddGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F1BDE6A16E588050077925D /* AddGameViewController.xib */; };
+		3F1BDE7716E592900077925D /* gameUITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1BDE7616E592900077925D /* gameUITableViewController.m */; };
 		7D4F99D816E152B00024676B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D4F99D716E152B00024676B /* UIKit.framework */; };
 		7D4F99DA16E152B00024676B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D4F99D916E152B00024676B /* Foundation.framework */; };
 		7D4F99DC16E152B00024676B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D4F99DB16E152B00024676B /* CoreGraphics.framework */; };
@@ -22,6 +26,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F1BDE1216E550DD0077925D /* gameItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gameItem.h; sourceTree = "<group>"; };
+		3F1BDE1316E550DD0077925D /* gameItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gameItem.m; sourceTree = "<group>"; };
+		3F1BDE6816E588050077925D /* AddGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddGameViewController.h; sourceTree = "<group>"; };
+		3F1BDE6916E588050077925D /* AddGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddGameViewController.m; sourceTree = "<group>"; };
+		3F1BDE6A16E588050077925D /* AddGameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddGameViewController.xib; sourceTree = "<group>"; };
+		3F1BDE7516E592900077925D /* gameUITableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gameUITableViewController.h; sourceTree = "<group>"; };
+		3F1BDE7616E592900077925D /* gameUITableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gameUITableViewController.m; sourceTree = "<group>"; };
 		7D4F99D416E152B00024676B /* Assignment5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D4F99D716E152B00024676B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7D4F99D916E152B00024676B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -92,6 +103,13 @@
 				7D4F99F216E152B00024676B /* ViewController_iPhone.xib */,
 				7D4F99F516E152B00024676B /* ViewController_iPad.xib */,
 				7D4F99DE16E152B00024676B /* Supporting Files */,
+				3F1BDE1216E550DD0077925D /* gameItem.h */,
+				3F1BDE1316E550DD0077925D /* gameItem.m */,
+				3F1BDE6816E588050077925D /* AddGameViewController.h */,
+				3F1BDE6916E588050077925D /* AddGameViewController.m */,
+				3F1BDE6A16E588050077925D /* AddGameViewController.xib */,
+				3F1BDE7516E592900077925D /* gameUITableViewController.h */,
+				3F1BDE7616E592900077925D /* gameUITableViewController.m */,
 			);
 			path = Assignment5;
 			sourceTree = "<group>";
@@ -167,6 +185,7 @@
 				7D4F99EE16E152B00024676B /* Default-568h@2x.png in Resources */,
 				7D4F99F416E152B00024676B /* ViewController_iPhone.xib in Resources */,
 				7D4F99F716E152B00024676B /* ViewController_iPad.xib in Resources */,
+				3F1BDE6C16E588050077925D /* AddGameViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +199,9 @@
 				7D4F99E416E152B00024676B /* main.m in Sources */,
 				7D4F99E816E152B00024676B /* AppDelegate.m in Sources */,
 				7D4F99F116E152B00024676B /* ViewController.m in Sources */,
+				3F1BDE1416E550DD0077925D /* gameItem.m in Sources */,
+				3F1BDE6B16E588050077925D /* AddGameViewController.m in Sources */,
+				3F1BDE7716E592900077925D /* gameUITableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +299,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Assignment5/Assignment5-Prefix.pch";
 				INFOPLIST_FILE = "Assignment5/Assignment5-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MACOSX_DEPLOYMENT_TARGET = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -288,7 +313,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Assignment5/Assignment5-Prefix.pch";
 				INFOPLIST_FILE = "Assignment5/Assignment5-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MACOSX_DEPLOYMENT_TARGET = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -312,6 +340,7 @@
 				7D4F99FC16E152B00024676B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
