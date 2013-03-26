@@ -11,6 +11,7 @@
 		3F1BDE6B16E588050077925D /* AddGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1BDE6916E588050077925D /* AddGameViewController.m */; };
 		3F1BDE6C16E588050077925D /* AddGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F1BDE6A16E588050077925D /* AddGameViewController.xib */; };
 		3F1BDE7716E592900077925D /* gameUITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1BDE7616E592900077925D /* gameUITableViewController.m */; };
+		3FB564D21700E4D200C74BB0 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FB564D11700E4D200C74BB0 /* HeaderView.xib */; };
 		7D4F99D816E152B00024676B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D4F99D716E152B00024676B /* UIKit.framework */; };
 		7D4F99DA16E152B00024676B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D4F99D916E152B00024676B /* Foundation.framework */; };
 		7D4F99DC16E152B00024676B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D4F99DB16E152B00024676B /* CoreGraphics.framework */; };
@@ -33,6 +34,7 @@
 		3F1BDE6A16E588050077925D /* AddGameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddGameViewController.xib; sourceTree = "<group>"; };
 		3F1BDE7516E592900077925D /* gameUITableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gameUITableViewController.h; sourceTree = "<group>"; };
 		3F1BDE7616E592900077925D /* gameUITableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gameUITableViewController.m; sourceTree = "<group>"; };
+		3FB564D11700E4D200C74BB0 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		7D4F99D416E152B00024676B /* Assignment5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D4F99D716E152B00024676B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7D4F99D916E152B00024676B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -110,6 +112,7 @@
 				3F1BDE6A16E588050077925D /* AddGameViewController.xib */,
 				3F1BDE7516E592900077925D /* gameUITableViewController.h */,
 				3F1BDE7616E592900077925D /* gameUITableViewController.m */,
+				3FB564D11700E4D200C74BB0 /* HeaderView.xib */,
 			);
 			path = Assignment5;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 				7D4F99F416E152B00024676B /* ViewController_iPhone.xib in Resources */,
 				7D4F99F716E152B00024676B /* ViewController_iPad.xib in Resources */,
 				3F1BDE6C16E588050077925D /* AddGameViewController.xib in Resources */,
+				3FB564D21700E4D200C74BB0 /* HeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
