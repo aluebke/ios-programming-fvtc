@@ -8,18 +8,19 @@
 
 #import <Foundation/Foundation.h>
 
-@interface gameUITableViewController : NSObject
+@interface gameUITableViewController : UITableViewController
 {
     NSMutableArray *_gameList;
     
     IBOutlet UIView *_HeaderView;
-    BOOL _deleteMode;
+    NSInteger _SelectedIndex;
     
 }
 
 -(UIView *) HeaderView;
 -(IBAction)AddButtonClick:(id)sender;
 -(IBAction)DeleteButtonClick:(id)sender;
+- (IBAction)EditButtonClick:(id)sender;
 
 
 @end

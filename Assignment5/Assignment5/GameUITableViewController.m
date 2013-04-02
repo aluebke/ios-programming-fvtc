@@ -8,11 +8,62 @@
 
 #import "gameUITableViewController.h"
 #import "AddGameViewController.h"
+#import "gameItem.h"
 
 @implementation gameUITableViewController
 
+//include HeaderView to display buttons at the top.
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    return [self HeaderView];
+}
+-(UIView *) HeaderView
+{
+    if (!_HeaderView)
+    {
+        [[NSBundle mainBundle] loadNibNamed:@"HeaderView" owner:self options:Nil];
+    }
+    return _HeaderView;
+}
 
--(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+//What does init do?
+//Initializes default values
+
+
+-(id) init
+{
+    self = [super init];
+    if (self)
+    {
+        //sets selected index to 'unselect' value.
+        //Also, dummy datas.
+        _SelectedIndex = -1;
+        _gameList = [[NSMutableArray alloc] init];
+        gameItem *temp = [[gameItem alloc] init];
+        [temp setTitle:@"Romance of the Three Kingdoms"];
+        [temp setGameSystem:@"SNES"];
+        [temp setGeanra:@"Strategy"];
+        [_gameList  addObject:temp];
+        gameItem *temp2 = [[gameItem alloc] init];
+        [temp setTitle:@"Nobonagas Ambition"];
+        [temp setGameSystem:@"NES"];
+        [temp setGeanra:@"Strategy"];;
+        [_gameList addObject:temp2];
+        
+    }
+    return self;
+}
+
+//loads every time view appears.  (refreshes table view)
+-(void)viewDidAppear:(BOOL)animated
+{
+    UITableView *View = (UITableView *)[self view];
+    [View reloadData];
+    _SelectedIndex = -1;
+}
+
+
+/*-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (_deleteMode)
     {
@@ -30,7 +81,9 @@
         
         
     }
+}*/
+
+
+- (IBAction)EditButtonClick:(id)sender {
 }
-
-
 @end

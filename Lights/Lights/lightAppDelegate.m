@@ -1,48 +1,25 @@
 //
-//  AppDelegate.m
-//  Assignment5
+//  lightAppDelegate.m
+//  Lights
 //
-//  Created by Adam Luebke on 3/1/13.
-//  Copyright (c) 2013 Adam Luebke. All rights reserved.
+//  Created by student on 4/1/13.
+//  Copyright (c) 2013 student. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "lightAppDelegate.h"
 
-#import "ViewController.h"
+#import "lightViewController.h"
 
-#import "GameUITableViewController.h"
-
-@implementation AppDelegate
+@implementation lightAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-   
-    
-    //Where the action happens
-    gameUITableViewController  *mvc = [[gameUITableViewController alloc] init];
-    [[self window]setRootViewController:mvc];
-    
-    
-    //leave everything below this line alone.
-    
-    
-    //Removed  on 01 April 2013
-    /*
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        self.viewController = [[ViewController alloc] initWithNibName:@"ViewController_iPhone" bundle:nil];
-    } else {
-        self.viewController = [[ViewController alloc] initWithNibName:@"ViewController_iPad" bundle:nil];
-    }
-    
+    self.viewController = [[lightViewController alloc] initWithNibName:@"lightViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
-
-     */
-    
-    [self.window makeKeyAndVisible];    
+    [self.window makeKeyAndVisible];
     return YES;
-
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

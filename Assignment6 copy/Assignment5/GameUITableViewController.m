@@ -13,6 +13,7 @@
 @implementation gameUITableViewController
 
 //include HeaderView to display buttons at the top.
+
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
     return [self HeaderView];
@@ -63,7 +64,29 @@
 }
 
 
--(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+//returns number of rows in view
+-(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [_gameList count];
+}
+
+//Populates tables from database
+-(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *Cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"UITableViewCell"];
+        gameItem *CurrentItem = [[gameItem alloc]init];
+        CurrentItem = [_gameList objectAtIndex:[indexPath row]];
+    NSString *tempString = [CurrentItem Title];
+    NSString *display = [[NSString alloc] initWithString:tempString];
+    [[Cell textLabel]setText:display];
+    return Cell;
+                             
+}
+
+
+
+
+/*-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (_deleteMode)
     {
@@ -81,9 +104,11 @@
         
         
     }
-}
+}*/
 
 
-- (IBAction)EditButtonClick:(id)sender {
+- (IBAction)EditButtonClick:(id)sender
+{
+    
 }
 @end
