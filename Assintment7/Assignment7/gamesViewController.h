@@ -14,6 +14,7 @@
     NSURLConnection *_connection;
     NSMutableData *_httpdata;
     NSArray *_gameArray;
+    NSTimer *_Timer;
 }
 
 -(void) BuildGameData: (NSString *) ArrayString;

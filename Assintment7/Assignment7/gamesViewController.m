@@ -45,21 +45,68 @@
                 NSLog(@"X location:%f", l.position.x);
                 NSLog(@"X location:%f", l.position.y);
                 
-                touchX = l.position.x;
-                touchY = l.position.y;
+                NSString *Touched = [[NSString alloc]initWithFormat:@"%@", l.name];
+                NSString *match=@"Pad";
+                NSString *pre;
+                NSString *post;
+                
+                //Like Con peak (looking through string
+                NSScanner *scanner = [NSScanner scannerWithString:Touched];
+                
+                [scanner scanUpToString:match intoString:&pre];
+                [scanner scanString:match intoString:nil];
+                post=[Touched substringFromIndex:scanner.scanLocation];
+                
+                if ([pre isEqualToString:@"Touch"])
+                {
+                    //if ([post isEqualToString:@"25"])
+                    
+                    int preValue = [post intValue];
+                    int postValue = preValue-25;
+                    
+                     NSLog(@"The preValue is %d",preValue);
+                     NSLog(@"The postValue is %d",postValue);
+                    
+
+                    int test =(postValue/5);
+                    
+                    touchY= 25 + (test *55);
+                    NSLog(@"The Y is %d",test);
+                    
+                    int try =(fdim(postValue, 5));
+                    
+                    if (postValue <5)
+                    {
+                        try=postValue;
+                    }
+                    
+                    while (try>=5)
+                    {
+                        try=(try-5);
+                    }
+                    
+                     NSLog(@"The X is %d",try);
+                    touchX =100 + (try * 60);
+                    
+                    
+                        circleLayer = [CAShapeLayer layer];
+                        
+                        UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(touchY, touchX, 25, 25) cornerRadius:25];
+                        
+                        [circleLayer setLineWidth:2];
+                        [circleLayer setStrokeColor:[UIColor yellowColor].CGColor];
+                        [circleLayer setFillColor:[UIColor clearColor].CGColor];
+                        [circleLayer setPath:[path CGPath]];
+                        
+                        [l addSublayer:circleLayer];
+                        
+                    
+                }
+                
                
                 
-                circleLayer = [CAShapeLayer layer];
-               
-                UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(touchX, touchY, 25, 25) cornerRadius:25];
                 
-                [circleLayer setLineWidth:2];
-                [circleLayer setStrokeColor:[UIColor yellowColor].CGColor];
-                [circleLayer setFillColor:[UIColor clearColor].CGColor];
-                [circleLayer setPath:[path CGPath]];
-                
-                [l addSublayer:circleLayer];
-                
+
                 
             
                 
@@ -117,8 +164,8 @@
         [labelLayer setFontSize:20];
         [labelLayer setString:[NSString stringWithFormat:@"%@", boardNumbers[counter]]];
         [labelLayer setForegroundColor:[UIColor blackColor].CGColor];
-        [labelLayer setBorderColor:[UIColor redColor].CGColor];
-        [labelLayer setBorderWidth:1];
+        //[labelLayer setBorderColor:[UIColor redColor].CGColor];
+        //[labelLayer setBorderWidth:1];
         
         
         [labelLayer setFrame:CGRectMake(0, 0, 54, 60)];
@@ -213,7 +260,7 @@
     }
     
     
-
+   // _Timer = [NSTimer scheduledTimerWithTimerInterval:5 target:self selector(tick) userInfo:Nil repeats:Yes];
 
 }
 
