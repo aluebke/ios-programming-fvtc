@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FC6F4DE172F489500423C57 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC6F4DD172F489500423C57 /* UIKit.framework */; };
+		3FC6F4E0172F489500423C57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC6F4DF172F489500423C57 /* Foundation.framework */; };
+		3FC6F4E2172F489500423C57 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC6F4E1172F489500423C57 /* CoreGraphics.framework */; };
+		3FC6F4E8172F489500423C57 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FC6F4E6172F489500423C57 /* InfoPlist.strings */; };
+		3FC6F4EA172F489500423C57 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC6F4E9172F489500423C57 /* main.m */; };
+		3FC6F4EE172F489500423C57 /* MemoryDataAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC6F4ED172F489500423C57 /* MemoryDataAppDelegate.m */; };
+		3FC6F4F0172F489500423C57 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FC6F4EF172F489500423C57 /* Default.png */; };
+		3FC6F4F2172F489500423C57 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FC6F4F1172F489500423C57 /* Default@2x.png */; };
+		3FC6F4F4172F489500423C57 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FC6F4F3172F489500423C57 /* Default-568h@2x.png */; };
+		3FC6F4F7172F489500423C57 /* MemoryDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC6F4F6172F489500423C57 /* MemoryDataViewController.m */; };
+		3FC6F4FA172F489500423C57 /* MemoryDataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FC6F4F8172F489500423C57 /* MemoryDataViewController.xib */; };
+		3FC6F502172F489500423C57 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC6F501172F489500423C57 /* SenTestingKit.framework */; };
+		3FC6F503172F489500423C57 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC6F4DD172F489500423C57 /* UIKit.framework */; };
+		3FC6F504172F489500423C57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC6F4DF172F489500423C57 /* Foundation.framework */; };
+		3FC6F50C172F489500423C57 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FC6F50A172F489500423C57 /* InfoPlist.strings */; };
+		3FC6F50F172F489500423C57 /* MemoryCardGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC6F50E172F489500423C57 /* MemoryCardGameTests.m */; };
+		3FC6F51B172F498900423C57 /* GameBoardDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC6F519172F498900423C57 /* GameBoardDataViewController.m */; };
+		3FC6F51C172F498900423C57 /* GameBoardDataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FC6F51A172F498900423C57 /* GameBoardDataViewController.xib */; };
+		3FC6F522172F4A0A00423C57 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC6F521172F4A0A00423C57 /* QuartzCore.framework */; };
+		3FC6F52D172F56D600423C57 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC6F52C172F56D600423C57 /* Card.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3FC6F505172F489500423C57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FC6F4D0172F489500423C57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FC6F4D8172F489500423C57;
+			remoteInfo = MemoryCardGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3FC6F4D9172F489500423C57 /* MemoryCardGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryCardGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FC6F4DD172F489500423C57 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3FC6F4DF172F489500423C57 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3FC6F4E1172F489500423C57 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3FC6F4E5172F489500423C57 /* MemoryCardGame-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MemoryCardGame-Info.plist"; sourceTree = "<group>"; };
+		3FC6F4E7172F489500423C57 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3FC6F4E9172F489500423C57 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3FC6F4EB172F489500423C57 /* MemoryCardGame-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MemoryCardGame-Prefix.pch"; sourceTree = "<group>"; };
+		3FC6F4EC172F489500423C57 /* MemoryDataAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryDataAppDelegate.h; sourceTree = "<group>"; };
+		3FC6F4ED172F489500423C57 /* MemoryDataAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryDataAppDelegate.m; sourceTree = "<group>"; };
+		3FC6F4EF172F489500423C57 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3FC6F4F1172F489500423C57 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		3FC6F4F3172F489500423C57 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3FC6F4F5172F489500423C57 /* MemoryDataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryDataViewController.h; sourceTree = "<group>"; };
+		3FC6F4F6172F489500423C57 /* MemoryDataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryDataViewController.m; sourceTree = "<group>"; };
+		3FC6F4F9172F489500423C57 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MemoryDataViewController.xib; sourceTree = "<group>"; };
+		3FC6F500172F489500423C57 /* MemoryCardGameTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemoryCardGameTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FC6F501172F489500423C57 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		3FC6F509172F489500423C57 /* MemoryCardGameTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MemoryCardGameTests-Info.plist"; sourceTree = "<group>"; };
+		3FC6F50B172F489500423C57 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3FC6F50D172F489500423C57 /* MemoryCardGameTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryCardGameTests.h; sourceTree = "<group>"; };
+		3FC6F50E172F489500423C57 /* MemoryCardGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryCardGameTests.m; sourceTree = "<group>"; };
+		3FC6F518172F498900423C57 /* GameBoardDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameBoardDataViewController.h; sourceTree = "<group>"; };
+		3FC6F519172F498900423C57 /* GameBoardDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameBoardDataViewController.m; sourceTree = "<group>"; };
+		3FC6F51A172F498900423C57 /* GameBoardDataViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameBoardDataViewController.xib; sourceTree = "<group>"; };
+		3FC6F521172F4A0A00423C57 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3FC6F52B172F56D600423C57 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		3FC6F52C172F56D600423C57 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FC6F4D6172F489500423C57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FC6F522172F4A0A00423C57 /* QuartzCore.framework in Frameworks */,
+				3FC6F4DE172F489500423C57 /* UIKit.framework in Frameworks */,
+				3FC6F4E0172F489500423C57 /* Foundation.framework in Frameworks */,
+				3FC6F4E2172F489500423C57 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FC6F4FC172F489500423C57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FC6F502172F489500423C57 /* SenTestingKit.framework in Frameworks */,
+				3FC6F503172F489500423C57 /* UIKit.framework in Frameworks */,
+				3FC6F504172F489500423C57 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FC6F4CE172F489500423C57 = {
+			isa = PBXGroup;
+			children = (
+				3FC6F521172F4A0A00423C57 /* QuartzCore.framework */,
+				3FC6F4E3172F489500423C57 /* MemoryCardGame */,
+				3FC6F507172F489500423C57 /* MemoryCardGameTests */,
+				3FC6F4DC172F489500423C57 /* Frameworks */,
+				3FC6F4DA172F489500423C57 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3FC6F4DA172F489500423C57 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FC6F4D9172F489500423C57 /* MemoryCardGame.app */,
+				3FC6F500172F489500423C57 /* MemoryCardGameTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FC6F4DC172F489500423C57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FC6F4DD172F489500423C57 /* UIKit.framework */,
+				3FC6F4DF172F489500423C57 /* Foundation.framework */,
+				3FC6F4E1172F489500423C57 /* CoreGraphics.framework */,
+				3FC6F501172F489500423C57 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3FC6F4E3172F489500423C57 /* MemoryCardGame */ = {
+			isa = PBXGroup;
+			children = (
+				3FC6F4EC172F489500423C57 /* MemoryDataAppDelegate.h */,
+				3FC6F4ED172F489500423C57 /* MemoryDataAppDelegate.m */,
+				3FC6F4F5172F489500423C57 /* MemoryDataViewController.h */,
+				3FC6F4F6172F489500423C57 /* MemoryDataViewController.m */,
+				3FC6F4F8172F489500423C57 /* MemoryDataViewController.xib */,
+				3FC6F4E4172F489500423C57 /* Supporting Files */,
+				3FC6F518172F498900423C57 /* GameBoardDataViewController.h */,
+				3FC6F519172F498900423C57 /* GameBoardDataViewController.m */,
+				3FC6F51A172F498900423C57 /* GameBoardDataViewController.xib */,
+				3FC6F52B172F56D600423C57 /* Card.h */,
+				3FC6F52C172F56D600423C57 /* Card.m */,
+			);
+			path = MemoryCardGame;
+			sourceTree = "<group>";
+		};
+		3FC6F4E4172F489500423C57 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3FC6F4E5172F489500423C57 /* MemoryCardGame-Info.plist */,
+				3FC6F4E6172F489500423C57 /* InfoPlist.strings */,
+				3FC6F4E9172F489500423C57 /* main.m */,
+				3FC6F4EB172F489500423C57 /* MemoryCardGame-Prefix.pch */,
+				3FC6F4EF172F489500423C57 /* Default.png */,
+				3FC6F4F1172F489500423C57 /* Default@2x.png */,
+				3FC6F4F3172F489500423C57 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3FC6F507172F489500423C57 /* MemoryCardGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				3FC6F50D172F489500423C57 /* MemoryCardGameTests.h */,
+				3FC6F50E172F489500423C57 /* MemoryCardGameTests.m */,
+				3FC6F508172F489500423C57 /* Supporting Files */,
+			);
+			path = MemoryCardGameTests;
+			sourceTree = "<group>";
+		};
+		3FC6F508172F489500423C57 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3FC6F509172F489500423C57 /* MemoryCardGameTests-Info.plist */,
+				3FC6F50A172F489500423C57 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FC6F4D8172F489500423C57 /* MemoryCardGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FC6F512172F489500423C57 /* Build configuration list for PBXNativeTarget "MemoryCardGame" */;
+			buildPhases = (
+				3FC6F4D5172F489500423C57 /* Sources */,
+				3FC6F4D6172F489500423C57 /* Frameworks */,
+				3FC6F4D7172F489500423C57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MemoryCardGame;
+			productName = MemoryCardGame;
+			productReference = 3FC6F4D9172F489500423C57 /* MemoryCardGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3FC6F4FF172F489500423C57 /* MemoryCardGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FC6F515172F489500423C57 /* Build configuration list for PBXNativeTarget "MemoryCardGameTests" */;
+			buildPhases = (
+				3FC6F4FB172F489500423C57 /* Sources */,
+				3FC6F4FC172F489500423C57 /* Frameworks */,
+				3FC6F4FD172F489500423C57 /* Resources */,
+				3FC6F4FE172F489500423C57 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FC6F506172F489500423C57 /* PBXTargetDependency */,
+			);
+			name = MemoryCardGameTests;
+			productName = MemoryCardGameTests;
+			productReference = 3FC6F500172F489500423C57 /* MemoryCardGameTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FC6F4D0172F489500423C57 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MemoryData;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = student;
+			};
+			buildConfigurationList = 3FC6F4D3172F489500423C57 /* Build configuration list for PBXProject "MemoryCardGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3FC6F4CE172F489500423C57;
+			productRefGroup = 3FC6F4DA172F489500423C57 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FC6F4D8172F489500423C57 /* MemoryCardGame */,
+				3FC6F4FF172F489500423C57 /* MemoryCardGameTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FC6F4D7172F489500423C57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FC6F4E8172F489500423C57 /* InfoPlist.strings in Resources */,
+				3FC6F4F0172F489500423C57 /* Default.png in Resources */,
+				3FC6F4F2172F489500423C57 /* Default@2x.png in Resources */,
+				3FC6F4F4172F489500423C57 /* Default-568h@2x.png in Resources */,
+				3FC6F4FA172F489500423C57 /* MemoryDataViewController.xib in Resources */,
+				3FC6F51C172F498900423C57 /* GameBoardDataViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FC6F4FD172F489500423C57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FC6F50C172F489500423C57 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3FC6F4FE172F489500423C57 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FC6F4D5172F489500423C57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FC6F4EA172F489500423C57 /* main.m in Sources */,
+				3FC6F4EE172F489500423C57 /* MemoryDataAppDelegate.m in Sources */,
+				3FC6F4F7172F489500423C57 /* MemoryDataViewController.m in Sources */,
+				3FC6F51B172F498900423C57 /* GameBoardDataViewController.m in Sources */,
+				3FC6F52D172F56D600423C57 /* Card.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FC6F4FB172F489500423C57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FC6F50F172F489500423C57 /* MemoryCardGameTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FC6F506172F489500423C57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FC6F4D8172F489500423C57 /* MemoryCardGame */;
+			targetProxy = 3FC6F505172F489500423C57 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3FC6F4E6172F489500423C57 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FC6F4E7172F489500423C57 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3FC6F4F8172F489500423C57 /* MemoryDataViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FC6F4F9172F489500423C57 /* en */,
+			);
+			name = MemoryDataViewController.xib;
+			sourceTree = "<group>";
+		};
+		3FC6F50A172F489500423C57 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FC6F50B172F489500423C57 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3FC6F510172F489500423C57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3FC6F511172F489500423C57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FC6F513172F489500423C57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MemoryCardGame/MemoryCardGame-Prefix.pch";
+				INFOPLIST_FILE = "MemoryCardGame/MemoryCardGame-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3FC6F514172F489500423C57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MemoryCardGame/MemoryCardGame-Prefix.pch";
+				INFOPLIST_FILE = "MemoryCardGame/MemoryCardGame-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3FC6F516172F489500423C57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MemoryCardGame.app/MemoryCardGame";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MemoryCardGame/MemoryCardGame-Prefix.pch";
+				INFOPLIST_FILE = "MemoryCardGameTests/MemoryCardGameTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		3FC6F517172F489500423C57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MemoryCardGame.app/MemoryCardGame";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MemoryCardGame/MemoryCardGame-Prefix.pch";
+				INFOPLIST_FILE = "MemoryCardGameTests/MemoryCardGameTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FC6F4D3172F489500423C57 /* Build configuration list for PBXProject "MemoryCardGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FC6F510172F489500423C57 /* Debug */,
+				3FC6F511172F489500423C57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FC6F512172F489500423C57 /* Build configuration list for PBXNativeTarget "MemoryCardGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FC6F513172F489500423C57 /* Debug */,
+				3FC6F514172F489500423C57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3FC6F515172F489500423C57 /* Build configuration list for PBXNativeTarget "MemoryCardGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FC6F516172F489500423C57 /* Debug */,
+				3FC6F517172F489500423C57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FC6F4D0172F489500423C57 /* Project object */;
+}
