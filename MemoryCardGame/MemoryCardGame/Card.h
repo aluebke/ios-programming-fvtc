@@ -14,5 +14,7 @@
 @property (nonatomic, retain)  NSString *_color;
 @property (nonatomic, retain)  NSString *_borderColor;
 @property (nonatomic, retain)  NSString *_cardID;
+@property (nonatomic, retain)  NSString *_revealed;
+
 
 @end

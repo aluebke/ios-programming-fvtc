@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface GameBoardDataViewController : UIViewController
-
+{
+    NSMutableArray *_CardsArray;
+}
 @end

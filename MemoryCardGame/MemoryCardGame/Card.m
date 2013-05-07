@@ -10,7 +10,7 @@
 
 @implementation Card
 
-@synthesize _shape,_color,_borderColor,_cardID;
+@synthesize _shape,_color,_borderColor,_cardID,_revealed;
 
 
 
