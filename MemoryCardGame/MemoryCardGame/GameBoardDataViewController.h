@@ -11,5 +11,6 @@
 @interface GameBoardDataViewController : UIViewController
 {
     NSMutableArray *_CardsArray;
+    NSMutableArray *_FlipArray;
 }
 @end

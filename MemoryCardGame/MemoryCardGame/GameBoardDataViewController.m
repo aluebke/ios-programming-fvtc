@@ -388,8 +388,18 @@
 
     [self loadCards];
     
+    [self loadFlip];
     
     
+}
+
+-(void) loadFlip
+{
+ 
+    NSInteger iFlip[16];
+    
+    for (NSInteger i=0; i<16; i ++)
+        iFlip[i] = 0;
     
 }
 
